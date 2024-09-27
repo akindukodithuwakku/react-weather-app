@@ -1,0 +1,121 @@
+.weather {
+    place-self: center;
+    padding: 40px;
+    border-radius: 20px;
+    background-image: linear-gradient(45deg, #2f4680, #c1bec7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Adding a shadow for better depth */
+    max-width: 400px; /* Limit max width for better responsiveness */
+    margin: 20px auto; /* Centering on the page */
+  }
+  
+  .search-bar {
+    align-items: center;
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px; /* Spacing between search bar and content */
+  }
+  
+  /* search bar input field css */
+  .search-bar input {
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding-left: 25px;
+    color: #2f4680; /* Changed to make text stand out */
+    background: #ebfffc; /* Lighter background for contrast */
+    font-size: 18px;
+    width: 100%; /* Take full width */
+    max-width: 300px; /* Limit max width */
+    transition: background 0.3s ease; /* Smooth transition */
+  }
+  
+  .search-bar input::placeholder {
+    color: #a9a9a9; /* Placeholder text color */
+  }
+  
+  .search-bar input:hover, 
+  .search-bar input:focus {
+    background: #d1d1d6; /* Highlight on focus or hover */
+  }
+  
+  /* search image css */
+  .search-bar img {
+    width: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    background: #ebfffc;
+    cursor: pointer; /* cursor type when hover over */
+    transition: transform 0.3s ease; /* Smooth transformation */
+  }
+  
+  .search-bar img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+  }
+  
+  /* weather icon css */
+  .weather-icon {
+ 
+    width: 200px;
+    margin: 30px 0; /* margin bottom 0 */
+    transition: transform 0.3s ease;
+  }
+  
+  .weather-icon:hover {
+    transform: rotate(20deg); /* Subtle rotation on hover */
+  }
+  
+  /* location data css */
+  .location {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600; /* Slightly bolder font */
+    margin-bottom: 10px; /* Space below location */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better contrast */
+  }
+  
+  /* temperature css */
+  .temperature {
+    color: #fff;
+    font-size: 72px; /* Slightly reduced size for balance */
+    line-height: 1;
+    font-weight: 700;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6); /* Shadow for better readability */
+  }
+  
+  /* weather-data section */
+  .weather-data {
+    display: flex;
+    gap: 20px; /* Spacing between weather info items */
+    margin-top: 20px;
+  }
+  
+  /* weather info columns */
+  .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .col img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 8px;
+  }
+  
+  .col p {
+    margin: 0;
+    font-weight: 600;
+  }
+  
+  .col span {
+    font-size: 14px;
+    color: #d1d1d6;
+  }
+  
